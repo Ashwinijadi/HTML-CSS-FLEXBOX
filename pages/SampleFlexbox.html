@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        My SampleFlexBox page</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: green;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem {
+            text-align: left;
+            background: blue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background:rgb(227, 243, 86);
+        }
+
+        .sidebarLeftItem {
+            background:skyblue;
+        }
+
+        .sidebarRightItem {
+            background: hotpink;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 0px solid green;
+        }
+
+        .mainContentItem {
+            flex: 3 0px;
+        }
+
+        .sidebarLeftItem {
+            order: 1;
+        }
+
+        .mainContentItem {
+            order: 2;
+        }
+
+        .sidebarRightItem {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>Header-Sample FlexBox</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First Article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                    carry vinyl typewriter.Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore
+                    hashtag polaroid
+                    single-origin coffee cold-pressed.PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth
+                    health goth gastropub hammock.
+                    .................................</p>
+            </article>
+            <article>
+                <h2>Second Article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                    carry vinyl typewriter.
+                    Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed.
+                    PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+                </p>
+            </article>
+            <article>
+                <h2>Third Article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                    carry vinyl typewriter.
+                    Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid
+                    single-origin coffee cold-pressed.
+                    PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+
+                    Cray food truck brunch,XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo
+                    8-bit. Intelligentsia
+                    unami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid
+                    chartreuse put a bird on it.
+                    Listicle pickled man bun cornhole heirloom art party.</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sidebarLeftItem">
+            <div class="center">
+                <p>Left Side Bar</p>
+            </div>
+        </sidebar>
+        <sidebar class="sideBarItem sidebarRightItem">
+            <div class="center">
+                <p>Right Side Bar</p>
+            </div>
+        </sidebar>
+    </div>
+    <footer class="footerContainer ">Footer</footer>
+</body>
+
+</html>
